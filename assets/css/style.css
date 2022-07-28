@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+
+body {
+    font-family: 'Balthazar', serif;
+}
+
+.contents {
+    position: absolute;
+    width: 1024px;
+    height: auto;
+    left: 150px;
+    top: 50px;
+    background-color: aliceblue;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 20px;
+}
+/*Header*/
+.header {
+    display: flex;
+    min-width: 800px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 45px;
+}
+/*Logo*/
+.header-logo{
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    left: 238px;
+    top: 80px;
+}
+.header-logo img {
+    height: 60px;
+}
+.header-logo span {
+    position: absolute;
+    left: 125px;
+    top: 43px;
+    color: #FFD24C;
+    font-size: 24px;
+    font-weight: 400;
+}
+/*Search-box*/
+.search-box {
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+.search-box button {
+    padding: 4px;
+    background: #FFD24C;
+    color: white;
+    font-family: 'Balatzhar', serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.search-box img {
+    margin: 0px 6px;
+    height: 15px;
+}
+.search-box input {
+    border: none;
+    font-family: 'Balthazar', serif;
+    font-size: 17px;
+}
+.search-box input:focus{
+    outline: none;
+}
+
+/*---Border Main----*/
+.main-content {
+    width: 850px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 80px;
+    padding-bottom: 40px;
+}
+/*profile-card*/
+.bio-card {
+    text-align: center;
+    width: 150px;
+    height: 250px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    margin: 0px 45px;
+}
+.bio-card h2{
+    font-size: 18px;
+    color: #92B4EC;
+}
+.bio-card span{
+    color: #92B4EC;
+    font-size: 16px;
+}
+.bio-card p {
+    color: #92B4EC;
+    font-size: 10px;
+    line-height: 10px;
+}
+.icon-list {
+    width: 150px;
+}
+.icon-list ul {
+    padding: 5px;
+    margin: 5px 0;
+}
+.icon-list li {
+    display: inline;
+    margin: 0px 5px;
+}
+.icon-list ul li a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.icon-list li a img {
+    height: 15px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.icon-list li a img:hover {
+    opacity: 1;
+}
+.card-image {
+    height: 80px;
+    width: 80px;
+    margin : 10px 30px;
+}
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #FFD24C;
+}
+
+/* Form Input Buku*/
+.form-box {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 340px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #92B4EC;
+    font-size: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 5px 30px;
+}
+
+.form-group label {
+    color: #92B4EC;
+    margin: 5px 2px;
+    font-size: 16px;
+}
+
+.form-group input {
+    border: 2px solid #FFD24C;
+    border-radius: 10px;
+    height: 25px;
+    font-style: italic;
+    font-size: 13px;
+}
+.form-group input:focus {
+    outline-color: #FFD24C;
+}
+.form button {
+    width: 320px;
+    padding: 8px;
+    margin: 10px 50px;
+    background: #FFD24C;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.form button span {
+    font-style: oblique;
+}
+.check-box {
+    width: 150px;
+    margin: 10px 30px;
+    align-items: center;
+}
+.check-box label {
+    color: #92B4EC;
+}
+
+/*Rak Buku*/
+.rack-book {
+    width: 300px;
+    height: auto;
+    margin: 0px 40px;
+}
+.book-shelf {
+    width: 260px;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: #92B4EC;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+.book-shelf h2 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+}
+.book-shelf .book-list {
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border: 1.5px solid #FFD24C;
+    border-radius: 5px;
+    margin: 10px 30px;
+    padding-bottom: 5px;
+}
+.book-item {
+    width: 150px;
+    height: auto;
+    padding: 5px;
+}
+.book-item h3 {
+    font-size: 13px;
+    margin: auto 5px;
+}
+.book-item p {
+    font-size: 11px;
+    margin: auto 5px;
+}
+.action {
+    display: flex;
+    width: 180px;
+    height: 20px;
+    margin: 5px;
+
+}
+.action .green {
+    font-size: 8.5px;
+    font-weight: bold;
+    width: 100px;
+    background-color:#32E79B;
+    ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.action .yellow {
+    font-size: 8.5px;
+    font-weight: bold;
+    width: 100px;
+    background-color: #FFD24C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.action .red {
+    font-size: 8.5px;
+    font-weight: bold;
+    width: 65px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    left: 500px;
+    top: auto;
+}

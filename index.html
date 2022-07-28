@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bookshelf Apps Gung</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="contents">
+            <div class="header">
+                <div class="header-logo">
+                    <img src="./assets/image/logo-54x54-01.png" alt="logo">
+                    <span>Bookshelf Apps</span>
+                </div>
+                <div class="search-box">
+                    <form id="searchBook">
+                        <button id="searchSubmit" type="submit">Cari Buku</button>
+                        <img src="./assets/image/search-10x10.png">
+                        <label for="searchBookTitle"></label>
+                        <input id="searchBookTitle" type="text" placeholder="Judul Buku..." value="">
+                    </form>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="bio-card">
+                    <h2>Bio Pengembang</h2>
+                    <div class="card-image">
+                        <img src="./assets/image/agung.png" alt="agung">
+                    </div>
+                    <span>Agung Maulana</span>
+                    <p>Jakarta, 16 Juli 1998<br>24 Tahun<br>Tenaga Kependidikan<br>Cakung - Jakarta Timur</p>
+                    <div class="icon-list">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/juniorgung16">
+                                    <img src="./assets/image/facebook-20x20.png" alt="fb">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/juniorgung/">
+                                    <img src="./assets/image/instagram-20x20.png" alt="ig">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Gungzilla16">
+                                    <img src="./assets/image/github-20x20.png" alt="git">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/agung-maulana-sutawinata-web-developer-40815b240/">
+                                    <img src="./assets/image/linked-20x20.png" alt="linked">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-box">
+                    <h2>Masukan Buku Baru</h2>
+                    <form class="form" action="#" id="formInputBook">
+                        <div class="form-group">
+                            <label for="inputBookTitle">Judul Buku</label>
+                            <input id="inputBookTitle" type="text" value="" required placeholder="Masukan nama judul buku...">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputBookAuthor">Penulis Buku</label>
+                            <input id="inputBookAuthor" type="text" value="" required placeholder="Masukan nama penulis buku...">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputBookYear">Tahun Terbit Buku</label>
+                            <input id="inputBookYear" type="number" value="" required placeholder="Masukan tahun terbit buku...">
+                        </div>
+                        <div class="check-box">
+                            <label for="inputIsCompleted">Selesai dibaca</label>
+                            <input id="inputIsCompleted" checked="" type="checkbox" onclick="changeText()">
+                        </div>
+                        <button id="bookSubmit" type="submit">Masukan buku ke rak <span id="textSubmit"> Belum selesai dibaca</span></button>
+                    </form>
+                </div>
+                <div class="rack-book">
+                    <section class="book-shelf">
+                        <h2>Belum selesai dibaca</h2>
+                        <div id="incompletedBookshelfList" class="book-list">
+                        </div>
+                    </section>
+
+                    <section class="book-shelf">
+                        <h2>Sudah selesai dibaca</h2>
+                        <div id="completedBookshelfList" class="book-list">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>~ Bookshelf Apss &copy; 2022 <strong>Agung Maulana version.16</strong> ~</p>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/dom.js"></script>
+        <script src="./assets/js/storage.js"></script>
+    </body>
+</html>
